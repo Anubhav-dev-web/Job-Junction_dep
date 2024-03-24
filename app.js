@@ -51,7 +51,7 @@ app.use(express.static(path.join(__dirname, "/Frontend/dist")));
 
 //Render frontend for any path that user goes to
 app.get("*", (req, res) =>
-  res.sendFile(path.join(__dirname, "/Frontend/dist/index.js"))
+  res.sendFile(path.join(__dirname, "/Frontend/dist/index.html"))
 );
 
 dbConnection();
