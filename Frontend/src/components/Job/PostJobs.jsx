@@ -24,7 +24,7 @@ const PostJobs = () => {
 
     await axios
       .post(
-        "4000/api/v1/job/post",
+        "/api/v1/job/post",
         fixedSalary.length >= 4
           ? {
               title,
